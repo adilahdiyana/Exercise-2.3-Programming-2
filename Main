@@ -1,0 +1,50 @@
+package BookScanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Book HarryPotter = new Book(); 
+		Book MonsterHouse = new Book();
+		Book MickeyMouse = new Book();
+		Book Doraemon = new Book();
+		
+		System.out.println("Harry Potter Characteristics");
+		HarryPotter.printChar();
+		HarryPotter.typeOfBook();
+		HarryPotter.costOfBook();
+		HarryPotter.weightOfBook();
+		
+		System.out.println();
+		System.out.println("_________________________________");
+		
+		System.out.println("Monster House Characteristics");
+		MonsterHouse.printChar();
+		MonsterHouse.typeOfBook();
+		MonsterHouse.costOfBook();
+		MonsterHouse.weightOfBook();
+		
+		System.out.println();
+		System.out.println("_________________________________");
+		
+		System.out.println("Mickey Mouse Characteristics");
+		MickeyMouse.printChar();
+		MickeyMouse.typeOfBook();
+		MickeyMouse.costOfBook();
+		MickeyMouse.weightOfBook();
+		
+		System.out.println();
+		System.out.println("_________________________________");
+		
+		System.out.println("Doraemon Characteristics");
+		Doraemon.printChar();
+	    Doraemon.typeOfBook();
+		Doraemon.costOfBook();
+		Doraemon.weightOfBook();
+		
+		System.out.println();
+		System.out.println("_________________________________");
+		
+	}
+
+}
