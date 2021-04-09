@@ -1,0 +1,46 @@
+package BookScanner;
+import java.util.Scanner;
+
+public class Book {
+	 
+	Scanner sc = new Scanner(System.in);
+	
+	void printChar() {
+		System.out.println("Enter Color, Size and Pages:");
+		String color = sc.nextLine();
+		double size = sc.nextDouble();
+		int pages = sc.nextInt();
+		
+		System.out.println("The color is: " + color);
+		System.out.println("The size is: " + size);
+		System.out.println("The pages are: " + pages);
+	}
+	
+	void typeOfBook() {
+		System.out.println("Is it a fiction book?");
+		if (sc.nextBoolean()== true) {
+			System.out.println("This book is a fiction book.");
+		}
+		else {
+			System.out.println("This book is a non fiction book.");
+		}
+	}
+	
+	void costOfBook() {
+		System.out.println("Enter price of book :");
+		double price = sc.nextDouble();
+		double total = price*3*31; 
+		System.out.printf("Cost of book for a month is RM%.2f%n%n",total);
+    }
+	
+	void weightOfBook() {
+		System.out.print("Weight: ");
+		double weight = sc.nextDouble();
+		System.out.print("Quantity: ");
+		int quantity = sc.nextInt();
+		double average = weight * quantity;
+		System.out.println("The average weight of " + quantity + " of the book is " + average + " gram.");
+	    double kg = average/1000;
+		System.out.println("Hence, it is " + kg + " in kg.");
+	}
+}
